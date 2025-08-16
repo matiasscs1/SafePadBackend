@@ -1,0 +1,17 @@
+# Archivos sensibles
+.env
+
+# Dependencias
+node_modules/
+src/config/vision_key.json
+
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Archivos del sistema / editor
+.DS_Store
+.idea/
+.vscode/
