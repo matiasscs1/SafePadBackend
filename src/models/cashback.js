@@ -11,9 +11,6 @@ const cashbackSchema = new mongoose.Schema({
     default: 0,
     min: 0
   },
-  fecha_ultima_renovacion: {
-    type: Date
-  }
 }, {
   timestamps: true
 });

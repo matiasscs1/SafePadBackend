@@ -14,7 +14,7 @@ const productoCashbackSchema = new mongoose.Schema({
     min: 0
   },
   foto_url: {
-    type: String
+    type: String 
   },
   activo: {
     type: Boolean,

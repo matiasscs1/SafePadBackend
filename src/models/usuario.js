@@ -51,11 +51,15 @@ const usuarioSchema = new mongoose.Schema({
     type: String,
     required: [true, 'Las preguntas de seguridad son requeridas']
   },
+  renovacionSafePad: {
+    type: Number,
+    default: 1
+  },
   estado: {
     type: String,
     enum: ['activo', 'inactivo'],
     default: 'activo'
-  }
+  },
 }, {
   timestamps: true
 });

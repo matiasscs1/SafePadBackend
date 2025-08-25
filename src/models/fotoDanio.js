@@ -3,13 +3,13 @@ import mongoose from "mongoose";
 const fotoDanioSchema = new mongoose.Schema({
  
   id_proceso: {
-    type: String,
+    type: mongoose.Schema.Types.ObjectId,
     required: true,
     trim: true,
     ref: 'ProcesoReparacion'
   },
   foto_url: {
-    type: String,
+    type: [],
     required: [true, 'La URL de la foto es requerida']
   }
 }, {

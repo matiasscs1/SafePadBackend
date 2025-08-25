@@ -12,14 +12,15 @@ const piezaEstadoSchema = new mongoose.Schema({
   },
   estado: {
     type: String,
-    enum: ['en_espera', 'recibida'],
-    default: 'en_espera'
+    enum: ['pendiente', 'recibida'],
+    default: 'pendiente'
   },
   fecha_solicitud: {
     type: Date
   },
   fecha_recibida: {
-    type: Date
+    type: Date,
+    default: null
   }
 }, {
   timestamps: true
